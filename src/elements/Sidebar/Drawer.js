@@ -27,6 +27,7 @@ import PlaceAdForm from "../PlaceAdForm/PlaceAdForm";
 import AboutUs from "../AboutUs/AboutUs";
 import {Routes, Route,Link } from "react-router-dom";
 import { useEffect } from "react";
+import LoginPage from "../LoginPage/LoginPage";
 
 
 
@@ -182,7 +183,7 @@ export default function MiniDrawer() {
         <Divider />
       </Drawer>
           <Routes>
-            <Route path="/" element={<HomePage />}></Route>
+            <Route path="/" element={<LoginPage />}></Route>
             <Route path="/listings" element={<Listings />}/>
             <Route path="/placeanad" element={<PlaceAdForm />}/>
             <Route path="/home" element={<HomePage />}/>
