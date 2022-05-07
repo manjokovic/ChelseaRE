@@ -1,0 +1,64 @@
+@forward 'variables';
+@forward 'placeholders';
+@forward 'mixins';
+
+
+
+div.row :nth-child(2){
+    text-align: center;
+}
+
+
+header>div:first-child{
+    min-height: 0%!important;
+}
+
+header + div>div{
+    background-color: #292929!important;
+}
+
+ul>a>div:nth-child(1)
+{
+    color: rgb(255 255 255)!important;
+}
+
+
+ul>a>div:nth-child(2)>span
+{
+    color:ghostwhite
+}
+
+// Sidebar hover over buttons
+ul>a>div:nth-child(2)>span:hover , ul>a>div:nth-child(1):hover{
+    color:rgba(125, 117, 232)!important;
+}
+
+
+header+div button{
+    color:rgb(255 255 255 / 54%)!important;
+}
+
+
+main{
+    display:flex;
+    padding:50px!important;
+    place-content: space-evenly;
+    background-color: #1B262C;
+    min-height:100vh;
+}
+
+main>div:hover{
+    transform: translateX(-5px);
+}
+
+main>div>div{
+    margin-block: 20px;
+}
+
+.card{
+    cursor: pointer;
+    width: 18rem ;
+    border: 2px solid transparent!important;
+}
+
+
